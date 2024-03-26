@@ -1,4 +1,5 @@
 import { currencyFormatter } from '../util/foramting';
+import Button from './UI/Button';
 export default function MealItem({ meal }) {
   return (
     <li className="meal-item">
@@ -11,7 +12,7 @@ export default function MealItem({ meal }) {
           </p>
           <p className="meal-item-description">{meal.description}</p>
           <p classNeme="meal-item-action">
-            <button>Add to Cart</button>
+            <Button>Add to Cart</Button>
           </p>
         </div>
       </article>
