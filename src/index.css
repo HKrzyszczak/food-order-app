@@ -166,7 +166,7 @@ h1 {
   border-radius: 50%;
   border: none;
   background-color: #312c1d;
-  color: #ffc404;
+  color: #ff0447;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +175,7 @@ h1 {
 .cart-item-actions button:hover,
 .cart-item-actions button:active {
   background-color: #1d1a16;
-  color: #ffab04;
+  color: #8817c9;
 }
 
 .control {
