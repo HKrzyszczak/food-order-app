@@ -20,7 +20,7 @@ export default function MealItem({ meal }) {
             {currencyFormatter.format(meal.price)}
           </p>
           <p className="meal-item-description">{meal.description}</p>
-          <p classNeme="meal-item-action">
+          <p className="meal-item-action">
             <Button onClick={handleAddMealToCart}>Add to Cart</Button>
           </p>
         </div>
