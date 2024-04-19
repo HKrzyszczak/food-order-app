@@ -1,5 +1,6 @@
-import useHttp from '../hooks/useHttp';
-import MealItem from './MealItem';
+import useHttp from '../hooks/useHttp.js';
+import MealItem from './MealItem.jsx';
+import Error from './Error.jsx';
 
 const requestConfig = {};
 
@@ -12,6 +13,10 @@ export default function Meals() {
 
   if (isLoading) {
     return <p>Fetching meals...</p>;
+  }
+
+  if (error) {
+    return <Error title="Failed to fetch meals" message={error} />;
   }
 
   return (
